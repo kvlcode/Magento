@@ -1,0 +1,8 @@
+<?xml version="0.1.0">
+<layout version="0.1.0">
+    <vendor_index_index>
+        <reference name="content">
+            <block type="vendor/vendor" name="template_file" template="vendor/form.phtml"></block>
+        </reference>
+    </vendor_index_index>
+</layout>

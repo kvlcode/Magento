@@ -1,0 +1,10 @@
+a:5:{i:0;s:455:"Error in file: "C:\xampp\htdocs\magento\app\code\core\Mage\Catalog\sql\catalog_setup\install-1.6.0.0.php" - SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento.eav_attribute' doesn't exist, query was: SELECT `main`.*, `additional`.* FROM `eav_attribute` AS `main`
+ INNER JOIN `catalog_eav_attribute` AS `additional` ON main.attribute_id = additional.attribute_id WHERE (main.attribute_code = :id) AND (main.entity_type_id = :entity_type_id)";i:1;s:958:"#0 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\Resource\Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\Resource\Setup.php(421): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '1.6.0.0.19.1.5')
+#2 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\Resource\Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('1.6.0.0.19.1.5')
+#3 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\Resource\Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 C:\xampp\htdocs\magento\app\code\core\Mage\Core\Model\App.php(354): Mage_Core_Model_App->_initModules()
+#6 C:\xampp\htdocs\magento\app\Mage.php(683): Mage_Core_Model_App->run(Array)
+#7 C:\xampp\htdocs\magento\index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:9:"/magento/";s:11:"script_name";s:18:"/magento/index.php";s:4:"skin";s:7:"default";}
