@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<layout>
+	<process_adminhtml_process_index>
+		<reference name="content">
+			<block type="process/adminhtml_process_index" name="process_grid"/>
+		</reference>
+	</process_adminhtml_process_index>
+
+<!-- 	<process_adminhtml_process_edit>
+		<reference name="left">
+			<block type="process/adminhtml_process_attribute_edit_tabs" name="attribute_tabs"/>
+		</reference>
+		<reference name="content">
+			<block type="process/adminhtml_process_attribute_edit" name="attribute_edit"/>
+		</reference>
+		<reference name="js">
+            <block type="adminhtml/template" name="attribute_edit_js" template="process/attribute/js.phtml"></block>
+        </reference>
+    </process_adminhtml_process_edit> -->
+
+    <process_adminhtml_process_edit>
+    	<reference name="content">
+    		<block type="process/adminhtml_process_edit" name="process_edit"/>
+    	</reference>
+    	<reference name="left">
+    		<block type="process/adminhtml_process_edit_tabs" name="process_tabs"/>
+    	</reference>
+		<!-- <reference name="js">
+			<block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+        </reference> -->
+    </process_adminhtml_process_edit>
+
+
+    <process_adminhtml_group_edit>
+    	<reference name="content">
+    		<block type="process/adminhtml_group_edit" name="group_edit"/>
+    	</reference>
+		<reference name="left">
+			<block type="process/adminhtml_group_edit_tabs" name="group_tabs"/>
+		</reference>
+		<!-- <reference name="js">
+			<block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+        </reference> -->
+    </process_adminhtml_group_edit>
+
+    <process_adminhtml_column_edit>
+    	<reference name="content">
+    		<block type="process/adminhtml_column_edit" name="column_edit"/>
+    	</reference>
+		<reference name="left">
+			<block type="process/adminhtml_column_edit_tabs" name="column_tabs"/>
+		</reference>
+		<!-- <reference name="js">
+			<block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+        </reference> -->
+    </process_adminhtml_column_edit>
+    <process_adminhtml_entry_edit>
+    	<reference name="content">
+    		<block type="process/adminhtml_entry_edit" name="entry_edit"/>
+    	</reference>
+		<reference name="left">
+			<block type="process/adminhtml_entry_edit_tabs" name="entry_tabs"/>
+		</reference>
+		<!-- <reference name="js">
+			<block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+        </reference> -->
+    </process_adminhtml_entry_edit>
+
+    <!-- <process_adminhtml_upload_uploadfile>
+		<reference name="content">
+			<block type="process/adminhtml_process_upload" name="process_upload"/>
+		</reference>
+		<reference name="left">
+			<block type="process/adminhtml_process_upload_tabs" name="process_tabs"/>
+		</reference> -->
+		<!-- <reference name="js">
+			<block type="adminhtml/catalog_product_upload_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+		</reference> -->
+	<!-- </process_adminhtml_upload_uploadfile> -->
+
+	<process_adminhtml_upload_uploadfile>
+        <reference name="content">
+            <block type="process/adminhtml_process_upload_edit" name="process_upload_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="process/adminhtml_process_upload_edit_tabs" name="process_upload_edit_tabs"></block>
+        </reference>
+    </process_adminhtml_upload_uploadfile>
+
+</layout>

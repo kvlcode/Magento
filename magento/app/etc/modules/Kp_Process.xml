@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Kp_Process>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Kp_Process>
+	</modules>
+</config>
